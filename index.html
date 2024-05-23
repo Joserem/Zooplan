@@ -187,10 +187,10 @@
             </div>
 
             <div class="col form">
-                <form action="#">
-                    <input type="text" placeholder="Nome*" required>
-                    <input type="email" placeholder="Email*" required>
-                    <textarea placeholder="Mensage" required></textarea>
+                <form class = "form" method="post" action="./email.php">
+                    <input name = "name" type="text" placeholder="Nome*" required>
+                    <input name = "email" type="email" placeholder="Email*" required>
+                    <textarea name = "message" placeholder="Mensage" required></textarea>
                     <button id="submit" type="submit">Enviar mensagem</button>
                 </form>
             </div>
