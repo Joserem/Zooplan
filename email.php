@@ -1,26 +1,46 @@
-<?php 
+<?php
+date_default_timezone_set('America/Sao_Paulo');
+require_once('src/PHPMailer.php');
+require_once('src/SMTP.php');
+require_once('src/Exception.php');
 
-if(isset($_POST['email']) && !empty($_POST['email'])){
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-$nome = addslashes($_POST['name']);
-$email = addslashes($_POST['email']);
-$mensagem = addslashes($_POST['message']);
+$name = isset($_POST['name']) ? $_POST['name'] : 'Nao informado';
+$email = isset($_POST['email']) ? $_POST['email'] : 'Nao informado';
+$message = isset($_POST['message']) ? $_POST['message'] : 'Nao informado';
+$date = date('d/m/Y H:i:s');
 
-
-$to = "joderim32@gmail.com";
-$subject = "Contato - zooplan infraestrutura";
-$body = "Nome: ".$nome. "\r\n"."Email: ".$email. "\r\n"."Mensagem: ".$mensagem;
-
-$header = "From:joderem123@gmail.com"."\r\n"."Reply-to:".$email."\r\n"."X=Mailer:PHP/".phpversion();
-
-if(mail($to,$subject,$body,$header)){
-    echo("Email enviado com sucesso!");
-}else{
-    echo("Email nao foi enviado");
+if($email && $name){
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'joderem123@gmail.com';
+    $mail->Password = 'iynl txcg nyrj bkhz';
+    $mail->Port = 587;
+    
+    $mail->setFrom('joderem123@gmail.com');
+    $mail->addAddress('joderem123@gmail.com'); #provedor
+    
+    
+    $mail->isHTML(true);
+    $mail->Subject = 'Contato - novo projeto zooplan';
+    $mail->Body = "Name: {$name}<br>
+                   Email: {$email}<br>
+                   Message: {$message} <br>
+                   Data/hora: {$date}";
+    
+    if($mail->send()) {
+        echo 'Email enviado com sucesso';
+    } else {
+        echo 'Email nao enviado';
+    }
+    
+} else{
+    echo 'Email nao enviado: informar o email e a mensagem';
 }
 
 
-}
-
-
-?>
