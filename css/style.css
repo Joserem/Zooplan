@@ -19,6 +19,7 @@ header {
     z-index: 100;
 }
 
+
 .flex {
     display: flex;
     align-items: center;
@@ -28,7 +29,7 @@ header {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 70px;
 }
 
 .navbar {
@@ -41,22 +42,27 @@ header {
 }
 
 .nav-links {
-    gap: 20px;
+    gap: 30px;
     list-style: none;
 }
 
 .navbar a {
     padding: 10px 0;
     display: inline-block;
-    color: #ffc252;
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.2s;
+    background: linear-gradient(to right, silver, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 .navbar a:hover {
-    color: #ddd;
+    text-shadow: 0 0 0 #FFD600; /* Adiciona sombra de texto amarelo no hover */
 }
+
+
 
 /*Homepage*/
 
@@ -94,21 +100,41 @@ header {
     font-weight: 700;
     margin-top: 10px;
 }
-.homepage a{
-    color: #333;
+
+.logo {
+    width: 500px; /* ajuste para o tamanho desejado */
+    height: auto;
+}
+          
+.homepage .text p {
+    font-size: 20px; /* ajuste para o tamanho desejado */
+    margin-top: -90px; /* ajuste para trazer o texto mais perto da imagem */
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(177, 176, 176));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.homepage a {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(94, 94, 94));
+    -webkit-background-clip: text;
     text-decoration: none;
-    background: #fff;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    box-shadow: rgba(0,0,0,0.3);
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: 2px solid #c0c0c0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
     font-size: 18px;
     transition: 0.3s;
+    color: transparent;
 }
-.homepage a:hover{
-    color: #fff;
-    background: rgba(255,255,255,0.3);
+
+.homepage a:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
 }
+
+
 
 /*section*/
 .section-title {
