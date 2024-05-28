@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -15,9 +16,14 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
+    background: #000000;
     z-index: 100;
 }
+
+body {
+    background: #D9D9D9;
+}
+
 
 
 .flex {
@@ -110,7 +116,7 @@ header {
     font-size: 20px; /* ajuste para o tamanho desejado */
     margin-top: -90px; /* ajuste para trazer o texto mais perto da imagem */
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(177, 176, 176));
-    -webkit-background-clip: text;
+    -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
 }
 
@@ -133,38 +139,76 @@ header {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
 }
-
-
-
-/*section*/
 .section-title {
- text-align: center;
+    text-align: center;
 }
-section h2 {
- margin-top: 30px;
- font-size: 2rem;
+
+section.services h2 {
+    margin-top: 90px;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 25px;
+    font-weight: normal;
+    margin-left: 0;
 }
-section .cards {
- margin-top: 50px;
- flex-wrap: wrap;
- justify-content: space-between;
+
+.nossa-historia {
+    width: 248px;
+    position: relative;
+    font-size: 28px;
+    display: inline-block;
+    color: #000;
+    text-align: left;
+    height: 63px;
+    transform:  rotate(-90deg);
+    transform-origin: 0 0;
+    left: -520px; /* Adiciona um deslocamento à esquerda */
+    top: -180px
 }
-section .card {
- width: calc(100% / 3 - 30px);
- text-align: center;
- list-style: none;
- background-color: #fff;
- padding: 40px 15px;
- border-radius: 5px;
- box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
- margin-bottom: 40px;
+
+
+
+section.services p{
+    text-align: justify;
+    margin-bottom: 25px;
+    margin-left: 0;
+    width: 65%; /* Reduz a largura do parágrafo */
 }
-section .card img{
- height: 120px;
- width: 120px;
- border-radius: 50%;
- margin-bottom: 20px;
+section.services .second-paragraph{
+    text-align: justify;
+    margin-bottom: 25px;
+    margin-left: 0;
+    width: 65%; /* Reduz a largura do parágrafo */
 }
+section.services .three-paragraph{
+    text-align: justify;
+    margin-bottom: 25px;
+    margin-left: 0;
+    width: 65%; /* Reduz a largura do parágrafo */
+}
+section.services .four-paragraph {
+    text-align: justify;
+    margin-bottom: 25px;
+    margin-left: 0;
+}
+
+.right-image {
+    float: right;
+    margin-right: -175px;
+    width: 40%;
+    height: auto;
+    margin-top: -380px;
+}
+
+.Imagem-sobre-baixo {
+    position: relative;
+    height: 35vh;
+    margin-left: -422px;
+    margin-bottom: 65px;
+
+}
+
+
 
 /*portfolio*/
 .portfolio .card{
