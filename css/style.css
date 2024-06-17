@@ -166,7 +166,14 @@ section.services h2 {
     top: -180px
 }
 
-
+.parallax {
+    background-image: url('trabalhadores-no-canteiro-de-obras.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real para a sua imagem */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 181%;
+}
 
 section.services p{
     text-align: justify;
@@ -208,17 +215,66 @@ section.services .four-paragraph {
 
 }
 
+.rectangle-div {
+    width: 203px;
+    height: 203px;
+    position: relative;
+    background-color: #D9D9D9;
+    transform: translateY(-336px); /* Move o elemento para cima */
+}
+
+.rectangle-div-2 {
+    width: 203px;
+    height: 203px;
+    position: relative;
+    left: 330px; /* Ajuste conforme necessário */
+    transform: translateY(-539px); /* Move o elemento para cima */
+}
+
+.rectangle-div-3 {
+    width: 203px;
+    height: 203px;
+    position: relative;
+    left: 660px; /* Ajuste conforme necessário */
+    transform: translateY(-740px); /* Move o elemento para cima */
+}
+
+.rectangle-div-4 {
+    width: 203px;
+    height: 203px;
+    position: relative;
+    left: 990px; /* Ajuste conforme necessário */
+    transform: translateY(-942px); /* Move o elemento para cima */
+}
+
+
+
+
+
 
 
 /*portfolio*/
-.portfolio .card{
- padding: 0 0 20px;
+.portfolio {
+    position: relative;
+    overflow: hidden;
+    margin-top: -770px;
+    height: 1080px; /* Define uma altura para o container */
 }
-.portfolio .card img {
- height: 240px;
- width: 100%;
- border-radius: 8px 8px 0 0;
+
+.imback-photoaidcom-darken-1-icon {
+    width: 100%;
+    height: 1080px; /* Define a altura da imagem para corresponder à do container */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+
+
+
+
+
 
 /*Sobre*/
 
