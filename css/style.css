@@ -311,7 +311,38 @@ section.services .four-paragraph {
     margin-top: 250px;
 }
 
-  
+.contact .section-title h2{
+    position: relative;
+    left: -582px; /* Ajuste conforme necessário para mover para a esquerda */
+    top: 40px;
+    font-size: 28px;
+}
+
+.col.information {
+    margin-left: -250px; /* Ajuste conforme necessário */
+    margin-top: -200px;
+}
+
+.contact .section-title p{
+    position: relative;
+    left: 0px; /* Ajuste conforme necessário para mover para a esquerda */
+    top: 10px;
+    font-size: 15px;
+}
+
+.contact .section-title p2{
+    position: relative;
+    left: 595px; /* Ajuste conforme necessário para mover para a esquerda */
+    top: -10px;
+    font-size: 15px;
+}
+
+.contact form{
+    margin-left: -285px; 
+    max-width: 100%;
+    margin-top: -60px;
+}
+
 .contact .row{
     justify-content: space-between;
     margin: 60px 0 90px;
@@ -330,6 +361,7 @@ section.services .four-paragraph {
 .contact .row .col p i{
     margin-right: 10px;
 }
+
 .contact form input{
     width: 100%;
     height: 45px;
@@ -346,6 +378,7 @@ section.services .four-paragraph {
     outline: none;
     resize: none;
     border: 1px solid #bfbfbf;
+    max-width: 100%;
     
 }
 
@@ -363,6 +396,19 @@ section.services .four-paragraph {
 
 .contact form button:hover{
     background: #525252;
+}
+
+.contact .map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%; /* Proporção para manter a relação de aspecto (16:9) */
+}
+.contact .map iframe {
+    position: absolute;
+    top: 92px; /* Deslocamento para cima */
+    left: 1355px;
+    width: 20%;
+    height: 350px;;
 }
 
 /*Footer*/

@@ -10,6 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 
 $name = isset($_POST['name']) ? $_POST['name'] : 'Nao informado';
 $email = isset($_POST['email']) ? $_POST['email'] : 'Nao informado';
+$tel = isset($_POST['tel']) ? $_POST['tel'] : 'Nao informado';
 $message = isset($_POST['message']) ? $_POST['message'] : 'Nao informado';
 $date = date('d/m/Y H:i:s');
 
@@ -31,6 +32,7 @@ if($email && $name){
     $mail->Body = "Name: {$name}<br>
                    Email: {$email}<br>
                    Message: {$message} <br>
+                   Telefone: {$tel} <br>
                    Data/hora: {$date}";
     
     if($mail->send()) {
