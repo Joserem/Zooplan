@@ -252,7 +252,7 @@ section.services .four-paragraph {
 
 
 
-/*serviços                                                                                                                          */
+/*serviços*/
 .portfolio {
     position: relative;
     overflow: hidden;
@@ -281,7 +281,7 @@ section.services .four-paragraph {
 
 .portfoly-div{
     position: relative;
-    height: 65vh; /* Altura do retângulo */
+    height: 60vh; /* Altura do retângulo */
     width: 1905px; /* Largura do retângulo - ajuste conforme necessário */
     margin-left: -421.1px;
     margin-bottom: 65px;
@@ -295,20 +295,83 @@ section.services .four-paragraph {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
-  }
+}
+
+.portfoly-div .section-title h1{
+    position: absolute;
+    font-size: 22px;
+    left: -495px;
+    top: 100px;
+}
+
+.portfoly-div .section-title h2{
+    position: relative;
+    font-size: 22px;
+    left: -607px;
+    top: 90px;
+}
+
+.portfoly-div .section-title p2{
+    position: relative;
+    font-size: 17px;
+    left: -495px;
+    top: 90px;
+}
+
+.portfoly-div .carousel {
+    width: 650px; /* Ou use 100% para ocupar toda a largura disponível */
+    top: 190px;
+    margin-left: 900px;
+    
+}
+.slick-prev,
+.slick-next {
+    visibility: hidden;
+}
 
 
+.clientes p2 {
+    position: relative;
+    font-size: 25px;
+    right: -855px;
+    top: -30px;
+}
 
+.clientes .carousel {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    top: 20px;
+}
+
+.clientes .magimg {
+    margin: 0px;
+}
+
+.clientes .magimg img {
+    width: 100%;
+    max-width: 160px;
+    min-width: 60px;
+    margin: 0 auto;
+}
+  
+.clientes .carousel .slick-prev:before {
+    color: black !important
+}
+  
+.clientes .carousel .slick-next:before {
+    color: black !important
+}
 
 /*Contatos*/
 
 .rectangle-container {
     position: relative;
-    height: 55vh; /* Altura do retângulo */
+    height: 60vh; /* Altura do retângulo */
     width: 1905px; /* Largura do retângulo - ajuste conforme necessário */
     margin-bottom: 65px;
     background-color: #d9d9d9; /* Cor de fundo do retângulo */   
-    margin-top: 250px;
+    margin-top: 70px;
 }
 
 .contact .section-title h2{
@@ -416,6 +479,7 @@ section.services .four-paragraph {
 .footer{
     background: #333;
     padding: 20px 0;
+    margin-top: -65px;
 }
 .footer span{
     color: #fff;
