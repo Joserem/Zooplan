@@ -4,10 +4,9 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        
     });
 });
-
-
 
 
 $('.carousel').slick({
@@ -26,7 +25,6 @@ $('.carousel').slick({
           infinite: true,
           dots: true,
           arrows: true,
-          
         }
       },
       {
@@ -42,9 +40,8 @@ $('.carousel').slick({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: false,
-          
+          dots: false,  
         }
       }
     ]
-  });
+});

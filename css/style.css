@@ -27,7 +27,6 @@ body {
 }
 
 
-
 .flex {
     display: flex;
     align-items: center;
@@ -225,6 +224,7 @@ section.services .four-paragraph {
     transform: translateY(-336px); /* Move o elemento para cima */
 }
 
+
 .rectangle-div-2 {
     width: 203px;
     height: 203px;
@@ -249,7 +249,40 @@ section.services .four-paragraph {
     transform: translateY(-942px); /* Move o elemento para cima */
 }
 
+.rectangle-div p{
+ position: absolute;
+ top: 60%; /* Ajuste conforme necessário */
+ transform: translateY(-50%);
+ left: 55px;/* Ajuste conforme necessário */
+}
 
+.rectangle-div p2{
+    position: absolute;
+    top: 60%; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    left: 27px;/* Ajuste conforme necessário */
+}
+
+.rectangle-div img {
+    height: auto; /* Mantém a proporção da imagem */
+    position: absolute;
+    top: 70px;
+    transform: translate(-50%, -50%); /* Centraliza a imagem */
+}
+
+.rectangle-div p3{
+    position: absolute;
+    top: 65%; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    left: 4px;/* Ajuste conforme necessário */
+}
+
+.rectangle-div p4{
+    position: absolute;
+    top: 60%; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    left: 45px;/* Ajuste conforme necessário */
+}
 
 
 /*serviços*/
@@ -269,9 +302,85 @@ section.services .four-paragraph {
     left: 0;
 }
 
+.rect-container{
+    position: relative;
+    height: 30vh; /* Altura do retângulo */
+    width: 1905px; /* Largura do retângulo - ajuste conforme necessário */
+    margin-bottom: 65px;
+    background-color: #d9d9d9; /* Cor de fundo do retângulo */   
+    margin-top: 590px;
+}
 
+.titulo {
+    position: relative;
+    right: -870px; /* Move o título para a direita */
+    top: 20px; /* Ajusta a distância do topo */
+    font-size: 22px; /* Diminui o tamanho da fonte */
+}
 
+.asfalto{
+    position: relative;
+    right: -280px; /* Move o título para a direita */
+    top: 60px; 
+    font-size: 18px;
+}
 
+.info-asfalto{
+    text-align: justify;
+    position: relative;
+    right: -280px;
+    top: 70px; 
+    width: 300px;
+}
+
+.f {
+    position: relative;
+    right: -170px; /* Ajusta a imagem mais para a direita */
+    top: -20px; /* Ajusta a imagem mais para cima */
+}
+
+.terra{
+    position: relative;
+    right: -870px; /* Move o título para a direita */
+    top: -110px; 
+    font-size: 18px;
+}
+
+.inf-terra{
+    text-align: justify;
+    position: relative;
+    right: -870px;
+    top: -100px; 
+    width: 300px;
+}
+
+.ty{
+    position: relative;
+    right: -770px; /* Ajusta a imagem mais para a direita */
+    top: -220px; /* Ajusta a imagem mais para cima */
+}
+
+.loca{
+    position: relative;
+    right: -1470px; /* Move o título para a direita */
+    top: -310px;
+    font-size: 18px;
+
+}
+
+.maqui{
+    text-align: justify;
+    position: relative;
+    right: -1470px;
+    top: -300px; 
+    width: 350px;
+}
+
+.lc{
+    position: relative;
+    right: -1370px; /* Ajusta a imagem mais para a direita */
+    top: -450px; /* Ajusta a imagem mais para cima */
+}
 
 
 
@@ -324,6 +433,7 @@ section.services .four-paragraph {
     margin-left: 900px;
     
 }
+
 .slick-prev,
 .slick-next {
     visibility: hidden;
@@ -483,6 +593,7 @@ section.services .four-paragraph {
 }
 .footer span{
     color: #fff;
+    margin-left: 330px;
 }
 #menu-toggler, #hamburger-btn {
     display: none;
