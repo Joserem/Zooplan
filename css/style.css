@@ -308,19 +308,19 @@ section.services .four-paragraph {
     width: 1905px; /* Largura do retângulo - ajuste conforme necessário */
     margin-bottom: 65px;
     background-color: #d9d9d9; /* Cor de fundo do retângulo */   
-    margin-top: 590px;
+    margin-top: 120px;
 }
 
 .titulo {
     position: relative;
     right: -870px; /* Move o título para a direita */
-    top: 20px; /* Ajusta a distância do topo */
-    font-size: 22px; /* Diminui o tamanho da fonte */
+    top: 18px; /* Ajusta a distância do topo */
+    font-size: 25px; /* Diminui o tamanho da fonte */
 }
 
 .asfalto{
     position: relative;
-    right: -280px; /* Move o título para a direita */
+    right: -250px; /* Move o título para a direita */
     top: 60px; 
     font-size: 18px;
 }
@@ -328,20 +328,20 @@ section.services .four-paragraph {
 .info-asfalto{
     text-align: justify;
     position: relative;
-    right: -280px;
+    right: -250px;
     top: 70px; 
     width: 300px;
 }
 
 .f {
     position: relative;
-    right: -170px; /* Ajusta a imagem mais para a direita */
+    right: -150px; /* Ajusta a imagem mais para a direita */
     top: -20px; /* Ajusta a imagem mais para cima */
 }
 
 .terra{
     position: relative;
-    right: -870px; /* Move o título para a direita */
+    right: -850px; /* Move o título para a direita */
     top: -110px; 
     font-size: 18px;
 }
@@ -349,21 +349,21 @@ section.services .four-paragraph {
 .inf-terra{
     text-align: justify;
     position: relative;
-    right: -870px;
+    right: -850px;
     top: -100px; 
     width: 300px;
 }
 
 .ty{
     position: relative;
-    right: -770px; /* Ajusta a imagem mais para a direita */
+    right: -750px; /* Ajusta a imagem mais para a direita */
     top: -220px; /* Ajusta a imagem mais para cima */
 }
 
 .loca{
     position: relative;
-    right: -1470px; /* Move o título para a direita */
-    top: -310px;
+    right: -1430px; /* Move o título para a direita */
+    top: -312px;
     font-size: 18px;
 
 }
@@ -371,17 +371,31 @@ section.services .four-paragraph {
 .maqui{
     text-align: justify;
     position: relative;
-    right: -1470px;
+    right: -1430px;
     top: -300px; 
-    width: 350px;
+    width: 390px;
 }
 
 .lc{
     position: relative;
-    right: -1370px; /* Ajusta a imagem mais para a direita */
+    right: -1340px; /* Ajusta a imagem mais para a direita */
     top: -450px; /* Ajusta a imagem mais para cima */
 }
 
+.video-container {
+    width: 100%;
+    max-width: 600px; /* Define a largura máxima do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo na página */
+    margin-top: 140px;
+    position: relative; /* Adiciona posição relativa */
+    z-index: 1; /* Garante que o vídeo fique acima de outros elementos */
+}
+
+video {
+    width: 100%; /* Faz o vídeo ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção do vídeo */
+    opacity: 1; /* Garante que o vídeo não seja transparente */
+}
 
 
 /*portfolio*/
