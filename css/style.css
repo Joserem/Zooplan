@@ -22,7 +22,7 @@ header {
 
 body {
     background: #D3D3D3;
-    
+    overflow-x: hidden;
     
 }
 
@@ -615,7 +615,8 @@ video {
 
 /*Responsive*/
 
-@media (width < 860px)  {
+
+@media (width < 768px)  {
     .navbar .nav-links{
         position: fixed;  
         left: 0;
@@ -635,35 +636,273 @@ video {
     .nav-links li {
         font-size: 18px;
     }
-    
-    #hamburger-btn{
-        display: block;
-        color: #fff;
-        font-size: 22px;
-        cursor: pointer;
+}
+
+/*sobre*/
+
+@media (max-width: 768px) {
+    .section-title {
+        text-align: center;
     }
-    section .cards .card{
-        width: calc(100% / 2 - 15px);
+    section.services h2 {
+        font-size: 1.5rem;
+        text-align: center;
     }
-    .contact .row{
-        flex-direction: column;
+    .nossa-historia {
+        display: none;
     }
-    .contact .row .col{
+    .parallax {
         width: 100%;
+        height: auto;
     }
-    .contact .row .col:last-child{
-        margin-top: 40px;
+    section.services p, section.services .second-paragraph, section.services .three-paragraph, section.services .four-paragraph {
+        width: 100%;
+        margin-left: 0;
+    }
+    .right-image {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+    .Imagem-sobre-baixo {
+        margin-left: 0;
+        height: auto;
+    }
+    .rectangle-div, .rectangle-div-2, .rectangle-div-3, .rectangle-div-4 {
+        display: none;
     }
 }
 
-@media (width < 560px) {
-    section .cards .card {
-        width: 100%
+/*serviços*/
+
+@media (max-width: 768px) {
+    .portfolio {
+        margin-top: 0;
+        height: auto;
     }
-    .homepage .text h1{
-        font-size: 30px;
+    .imback-photoaidcom-darken-1-icon {
+        height: auto;
+        top: 80px;
     }
-    section h2 {
+    .rect-container {
+        width: 100%;
+        height: 75vh;
+        margin-top: 70px;
+    }
+    .titulo{
+        right: 0;
+        top: -310px;
+        text-align: center;
         font-size: 1.5rem;
+    }
+    .asfalto, .terra{
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .terra{
+        right: 0;
+        top: 20px;
+        text-align: center;
+        font-size: 1rem;  
+    }
+    .inf-terra{
+        width: 100%;
+        right: 0;
+        top: 25px;
+        text-align: justify;
+    }
+    .loca{
+        right: 0;
+        top: 35px;
+        text-align: center;
+        font-size: 1rem; 
+    }
+    .maqui{
+        width: 100%;
+        right: 0;
+        top: 40px;
+        text-align: justify;
+    }
+
+    .info-asfalto {
+        width: 100%;
+        right: 0;
+        top: 10px;
+        text-align: justify;
+    }
+    .f, .ty, .lc {
+        display: none;
+    }
+    .video-container {
+        max-width: 100%;
+        margin-top: 110px;
+    }
+}
+
+/*portfolio*/
+
+@media (max-width: 768px) {
+    .portfoly-div {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2vh;
+        height: auto;
+        
+    }
+    .portfoly-div .section-title {
+        top: -25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+    }
+    .portfoly-div .section-title p{
+        font-size: 1.5rem;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transform: translate(0, 0);
+    }
+    .portfoly-div .section-title h1{
+        display: none;
+    }
+    .portfoly-div .section-title h2{
+        font-size: 15px;
+        left: 0;
+        top: 10px;
+        text-align: center;
+        transform: translate(0, 0);
+        white-space: nowrap;
+    }
+    .portfoly-div .section-title p2 {
+        display: none;
+        
+    }
+    .portfoly-div .carousel {
+        width: 100%;
+        margin: 0;
+        top: 10px;
+        flex: 0 0 90%;
+    }
+    .clientes p2 {
+        font-size: 20px;
+        right: -120px;
+        top: 0;
+        text-align: center;
+    }
+    .clientes .carousel {
+        width: 100%;
+        top: 15px;
+    }
+    .clientes .magimg img {
+        max-width: 100px;
+        min-width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfoly-div .section-title {
+        font-size: 18px;
+    }
+    .portfoly-div .section-title h1,
+    .portfoly-div .section-title h2,
+    .portfoly-div .section-title p2 {
+        font-size: 16px;
+    }
+    .clientes p2 {
+        font-size: 18px;
+    }
+    .clientes .magimg img {
+        max-width: 80px;
+        min-width: 40px;
+    }
+}
+
+/*contatos*/
+
+@media (max-width: 768px) {
+    .rectangle-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .contact .section-title h2 {
+        left: 0;
+        top: 20px;
+        font-size: 24px;
+        text-align: center;
+        transform: translate(0, 0);
+    }
+    .col.information {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+    .contact .section-title p {
+        left: 0;
+        top: 220px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .contact .section-title p2 {
+        left: 0;
+        top: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+    .contact form {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .contact .row {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .contact .row .col {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .contact .map-container {
+        display: none;
+    }
+    .contact .map iframe {
+        display: none;
+    }
+    .contact .contact-details p:last-child {
+        display: none;
+    }
+    .contact .contact-details p:nth-child(2) {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer{
+        background: #333;
+        padding: 50px 0;
+        margin-top: -65px;
+    }
+
+    .footer span{
+        color: #fff;
+        margin-left: -20px;
+        font-size: 11px;
+        position: absolute;
+        margin-top: 15px; 
+
+    }
+
+    #menu-toggler, #hamburger-btn {
+        display: none;
     }
 }
